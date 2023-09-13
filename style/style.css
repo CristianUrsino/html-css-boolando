@@ -15,7 +15,35 @@
 }
 .container{
     width: 1200px;
+    margin: 0 auto;
+    height: 100%;
 }
 .text-white{
     color:var(--primary-color);
+}
+a{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+.text-bold{
+    font-weight: bold;
+}
+/* header  */
+header{
+    background-color: #FF6900;
+    height: 70px;
+}
+.d-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#logo{
+    height: 60%;
+}
+header a{
+    padding-right: 10px;
+}
+header i{
+    padding-left: 10px;
 }
