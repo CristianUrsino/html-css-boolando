@@ -14,7 +14,7 @@
     border: 1px solid black;
 }
 .container{
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
     height: 100%;
 }
@@ -30,6 +30,8 @@ a{
 }
 /* header  */
 header{
+    position: fixed;
+    width: 100%;
     background-color: #FF6900;
     height: 70px;
 }
@@ -41,10 +43,37 @@ header{
 #logo{
     height: 60%;
 }
-header a{
+header a, footer a{
     padding-right: 10px;
 }
-header i{
+header i, footer i{
     padding-left: 10px;
 }
 /* main  */
+main{
+    padding: 100px 60px 30px;
+}
+.card-wrapper{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+.card{
+    width: calc(100% / 3);
+    padding: 15px;
+    min-width: 300px;
+}
+.card-content{
+    position: relative;
+}
+/* footer  */
+footer{
+    background-color: var(--secondary-color);
+    padding: 20px 0;
+    line-height: 1.5em;
+}
+footer ul:last-of-type a{
+    float: right;
+}
