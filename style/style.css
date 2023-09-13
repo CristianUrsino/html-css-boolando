@@ -8,7 +8,6 @@
 :root{
     --primary-color: white;
     --secondary-color: #1A1A1A;
-    --discount-color:#ff0306
 }
 .debug{
     border: 1px solid black;
@@ -34,6 +33,7 @@ header{
     width: 100%;
     background-color: #FF6900;
     height: 70px;
+    z-index: 1;
 }
 .d-flex{
     display: flex;
@@ -67,6 +67,66 @@ main{
 }
 .card-content{
     position: relative;
+}
+/* elementi card  */
+main img{
+    width: 100%;
+}
+.first-img{
+    display: block;
+}
+.second-img{
+    display: none;
+}
+.card:hover .first-img{
+    display: none;
+}
+.card:hover .second-img{
+    display: block;
+}
+.heart{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    background: var(--primary-color);
+    font-size: 2em;
+    padding: 5px 15px;
+}
+.heart a{
+    color: var(--secondary-color);
+}
+.heart a:hover{
+    color: red;
+}
+.tags{
+    position: absolute;
+    bottom: calc(100% / 5);
+    left: 0;
+}
+.tags div{
+    float: left;
+    padding: 3px 10px 4px 10px;
+    margin-right: 15px;
+    text-align: center;
+}
+.discount{
+    background-color: red;
+}
+.eco{
+    background-color: green;
+}
+.brand{
+    color: gray;
+}
+main h3{
+    color: var(--secondary-color);
+}
+main span{
+    color: red;
+}
+main del{
+    color:gray;
+    font-size: 0.7em;
 }
 /* footer  */
 footer{
