@@ -1,0 +1,21 @@
+/* general */
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    list-style: none;
+}
+:root{
+    --primary-color: white;
+    --secondary-color: #1A1A1A;
+    --discount-color:#ff0306
+}
+.debug{
+    border: 1px solid black;
+}
+.container{
+    width: 1200px;
+}
+.text-white{
+    color:var(--primary-color);
+}
